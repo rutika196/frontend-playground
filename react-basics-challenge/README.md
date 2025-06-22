@@ -1,5 +1,8 @@
 # React Basics Challenge - Day 1 Complete! 🎉
 
+## 🔗 Linear Integration Test
+✅ GitHub webhooks are now configured and ready for testing!
+
 ## Day 1 Challenges ✅
 
 ### Challenge 1: Greeting Component with Props
