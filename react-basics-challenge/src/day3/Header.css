@@ -1,0 +1,212 @@
+.app-header {
+  background: #2a3f5f;
+  color: #ffffff;
+  padding: 2rem 1rem;
+  margin-bottom: 0;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(64, 162, 171, 0.15);
+  border: 1px solid #567ba3;
+  text-align: center;
+  width: 100%;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.header-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  background: #567ba3;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #00ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+  transition: transform 0.2s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-2px);
+  border-color: #00ffff;
+}
+
+/* Different neon colors for each stat */
+.days-stat {
+  border-color: #ffd700;
+}
+
+.days-stat:hover {
+  border-color: #ffd700;
+}
+
+.days-stat .stat-number {
+  color: #ffd700;
+}
+
+.challenges-stat {
+  border-color: #00fa9a;
+}
+
+.challenges-stat:hover {
+  border-color: #00fa9a;
+}
+
+.challenges-stat .stat-number {
+  color: #00fa9a;
+}
+
+.stat-number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Horizontal Progress Bar */
+.progress-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+  padding: 0.5rem;
+}
+
+.progress-bar-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.progress-bar-track {
+  width: 100%;
+  height: 12px;
+  background: #2a3f5f;
+  border-radius: 6px;
+  border: 1px solid #567ba3;
+  overflow: hidden;
+  position: relative;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff6b6b, #ee5a52);
+  border-radius: 6px;
+  transition: width 0.8s ease-in-out;
+  position: relative;
+}
+
+.progress-bar-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.progress-percentage {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ff6b6b;
+  line-height: 1;
+}
+
+.progress-label {
+  font-size: 0.7rem;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-header {
+    padding: 1.5rem 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+  }
+  
+  .header-title {
+    font-size: 2rem;
+  }
+  
+  .header-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .header-stats {
+    gap: 1rem;
+  }
+  
+  .stat-item {
+    padding: 0.8rem 1rem;
+    min-width: 70px;
+  }
+  
+  .stat-number {
+    font-size: 1.5rem;
+  }
+  
+  .stat-label {
+    font-size: 0.8rem;
+  }
+  
+  .progress-bar-container {
+    min-width: 150px;
+  }
+  
+  .progress-bar-track {
+    height: 10px;
+  }
+  
+  .progress-percentage {
+    font-size: 1rem;
+  }
+  
+  .progress-label {
+    font-size: 0.6rem;
+  }
+} 
