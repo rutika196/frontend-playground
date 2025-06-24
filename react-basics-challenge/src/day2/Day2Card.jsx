@@ -29,7 +29,7 @@ const Day2Card = () => {
   return (
     <div className="day-card">
       <div className="day-card-header">
-        <h1>Day 2 Challenge</h1>
+        <h1>Day 2</h1>
         <div className="date-badge">
           {new Date().toLocaleDateString('en-US', { 
             weekday: 'long', 

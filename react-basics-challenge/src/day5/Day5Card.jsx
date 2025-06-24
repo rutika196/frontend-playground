@@ -1,35 +1,35 @@
 import React from 'react';
-import Greeting from './Greeting';
-import ControlledInput from './ControlledInput';
-import CounterButton from './CounterButton';
-import './Day1Card.css';
+import BindingInput from './BindingInput';
+import Toggle from './Toggle';
+import FragmentComponent from './FragmentComponent';
+import './Day5Card.css';
 
-const Day1Card = () => {
+const Day5Card = () => {
   const challenges = [
     {
       id: 1,
-      title: "Render a component with props",
-      description: "Created a Greeting component that accepts and displays a name prop",
-      component: <Greeting name="Rutika" />
+      title: "Two-way Data Binding Input",
+      description: "Implemented input with bidirectional data flow using controlled components",
+      component: <BindingInput />
     },
     {
       id: 2,
-      title: "Controlled input (text field)",
-      description: "Built an input component with controlled state that displays typed text in real-time",
-      component: <ControlledInput />
+      title: "Toggle Component",
+      description: "Created a toggle switch component with state management and visual feedback",
+      component: <Toggle />
     },
     {
       id: 3,
-      title: "Button with onClick counter",
-      description: "Implemented a counter button that increments count on each click using useState",
-      component: <CounterButton />
+      title: "React Fragment Component",
+      description: "Built a component using React.Fragment to return multiple elements without wrapper div",
+      component: <FragmentComponent />
     }
   ];
 
   return (
     <div className="day-card">
       <div className="day-card-header">
-        <h1>Day 1</h1>
+        <h1>Day 5</h1>
         <div className="date-badge">
           {new Date().toLocaleDateString('en-US', { 
             weekday: 'long', 
@@ -61,11 +61,11 @@ const Day1Card = () => {
 
       <div className="day-card-footer">
         <div className="achievement-badge">
-          🏆 Day 1 Complete!
+          🏆 Day 5 Complete!
         </div>
       </div>
     </div>
   );
 };
 
-export default Day1Card; 
+export default Day5Card; 

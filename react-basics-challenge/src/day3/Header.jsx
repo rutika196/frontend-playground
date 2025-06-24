@@ -13,7 +13,7 @@ const Header = () => {
             <span className="stat-label">Days</span>
           </div>
           <div className="stat-item challenges-stat">
-            <span className="stat-number">11</span>
+            <span className="stat-number">13</span>
             <span className="stat-label">Challenges</span>
           </div>
           <div className="progress-bar-container">
