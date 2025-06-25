@@ -1,35 +1,35 @@
 import React from 'react';
-import NameList from './Namelist';
-import ShowHide from './ShowHide';
-import SimpleForm from './SimpleForm';
-import './Day2Card.css';
+import QuoteDemo from './QuoteDemo';
+import ButtonDemo from './ButtonDemo';
+import UserList from './UserList';
+import './Day7Card.css';
 
-const Day2Card = () => {
+const Day7Card = () => {
   const challenges = [
     {
       id: 1,
-      title: "Map array to list with key",
-      description: "Created a NameList component that renders an array of names using map() with proper key attributes",
-      component: <NameList />
+      title: "Reusable Quote Component",
+      description: "Built a reusable Quote component that accepts text and author props for displaying formatted quotes",
+      component: <QuoteDemo />
     },
     {
       id: 2,
-      title: "Conditional rendering (show/hide text)",
-      description: "Built a ShowHide component with toggle functionality using conditional rendering and state management",
-      component: <ShowHide />
+      title: "Custom Button Component",
+      description: "Created a flexible Button component with customizable props for label, onClick, type, and styling",
+      component: <ButtonDemo />
     },
     {
       id: 3,
-      title: "Simple form with submit handler",
-      description: "Implemented a SimpleForm component with controlled input, form submission, and event handling",
-      component: <SimpleForm />
+      title: "User List with Cards",
+      description: "Implemented UserList and UserCard components to display user data in a structured format",
+      component: <UserList />
     }
   ];
 
   return (
     <div className="day-card">
       <div className="day-card-header">
-        <h1>Day 2</h1>
+        <h1>Day 7</h1>
         <div className="date-badge">
           {new Date().toLocaleDateString('en-US', { 
             weekday: 'long', 
@@ -64,4 +64,4 @@ const Day2Card = () => {
   );
 };
 
-export default Day2Card; 
+export default Day7Card; 

@@ -59,11 +59,7 @@ const Day6Card = () => {
         ))}
       </div>
 
-      <div className="day-card-footer">
-        <div className="achievement-badge">
-          🏆 Day 6 Complete!
-        </div>
-      </div>
+
     </div>
   );
 };

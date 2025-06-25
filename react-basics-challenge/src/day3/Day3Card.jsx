@@ -30,11 +30,7 @@ const Day3Card = () => {
         </div>
       </div>
 
-      <div className="day-card-footer">
-        <div className="achievement-badge">
-          🎯 State Management Mastery
-        </div>
-      </div>
+
     </div>
   );
 };

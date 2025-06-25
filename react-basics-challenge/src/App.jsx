@@ -10,6 +10,7 @@ import Header from './day3/Header';
 import Footer from './day3/Footer';
 import Day5Card from './day5/Day5Card';
 import Day6Card from './day6/Day6Card';
+import Day7Card from './day7/Day7Card';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Day4Card />
         <Day5Card />
         <Day6Card />
+        <Day7Card />
       </main>
       <Footer />
     </div>

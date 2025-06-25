@@ -60,11 +60,7 @@ const Day4Card = () => {
         </div>
       </div>
 
-      <div className="day-card-footer">
-        <div className="achievement-badge">
-          🔄 Lifecycle Master
-        </div>
-      </div>
+
     </div>
   );
 };
