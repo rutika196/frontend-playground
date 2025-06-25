@@ -12,7 +12,7 @@ export default function ButtonDemo() {
     }
     return(
         <>
-        <Button label='Alert' onClick={logSomething} style={{backgroundColor: "purple", color: "white", marginLeft: "10px" }}/>
+        <Button label='Log' onClick={logSomething} style={{backgroundColor: "purple", color: "white", marginLeft: "10px" }}/>
 
         <Button label='Alert' onClick={sayHello} style={{backgroundColor: "purple", color: "white", marginLeft: "10px" }} />
          </>
