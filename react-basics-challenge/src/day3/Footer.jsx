@@ -5,26 +5,34 @@ const Footer = () => {
   return (
     <footer className="app-footer">
       <div className="footer-content">
-        <div className="footer-section">
-          <h3 className="footer-title">🚀 Keep Learning!</h3>
-          <p className="footer-text">
-            Great job completing these React challenges! Keep practicing to build amazing apps.
+        <div className="footer-main">
+          <p className="footer-tagline">
+            "Innovation distinguishes between a leader and a follower." - Steve Jobs
           </p>
-        </div>
-        
-        <div className="footer-section">
-          <h4 className="footer-subtitle">Next Steps:</h4>
-          <ul className="footer-list">
-            <li>Advanced React Hooks</li>
-            <li>State Management (Redux/Zustand)</li>
-            <li>React Router</li>
-            <li>Testing with Jest & React Testing Library</li>
-          </ul>
+          
+          <div className="footer-links">
+            <a 
+              href="https://your-portfolio.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="footer-link"
+            >
+              Portfolio
+            </a>
+            <a 
+              href="https://linkedin.com/in/your-profile" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="footer-link"
+            >
+              LinkedIn
+            </a>
+          </div>
         </div>
         
         <div className="footer-bottom">
           <p className="footer-copyright">
-            Built with ❤️ while learning React • {new Date().getFullYear()}
+            Built with ❤️ and React • {new Date().getFullYear()}
           </p>
         </div>
       </div>

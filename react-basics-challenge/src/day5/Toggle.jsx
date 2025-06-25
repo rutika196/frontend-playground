@@ -14,7 +14,7 @@ const Toggle = () => {
             <h3>Simple boolean toggle button</h3>
             
             <button onClick={handleEvent}>{toggleValue ? 'OFF' : 'ON'}</button>
-            <p>{toggleValue ? 'ON' : 'OFF'}</p>
+            <p>Current State: {toggleValue ? 'ON' : 'OFF'}</p>
         </div>
 
     )

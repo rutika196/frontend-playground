@@ -9,7 +9,7 @@ const Theme = () => {
 
     return(
         <div>
-            <button type="button" onClick={handleTheme}></button>
+            <button type="button" onClick={handleTheme}>{theme}</button>
             <p>Current mode: {theme}</p>
         </div>
     );

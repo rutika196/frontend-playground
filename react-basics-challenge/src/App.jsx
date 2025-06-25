@@ -9,6 +9,8 @@ import Day4Card from './day4/Day4Card';
 import Header from './day3/Header';
 import Footer from './day3/Footer';
 import Day5Card from './day5/Day5Card';
+import Day6Card from './day6/Day6Card';
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +24,7 @@ function App() {
         <Day3Card />
         <Day4Card />
         <Day5Card />
+        <Day6Card />
       </main>
       <Footer />
     </div>
